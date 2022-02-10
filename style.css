@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #131313;
+    overflow: hidden;
+}
+.Layer
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 300vh;
+    background: #fff;
+    box-shadow: inset -10px 0 40px rgba(0,0,0,1),
+    inset 10px 0 40px rgba(0,0,0,1),
+    inset -10px 0 10px rgba(255, 255, 255, 0.25),
+    inset 10px 0 10px rgba(255, 255, 255, 0.25),
+    0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 35px -35px;
+    }
+}
+
+@keyframes animate_two
+{
+    0%
+    {
+        background-position: 35px 35px;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+@keyframes animate_three
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 35px 35px;
+    }
+}
+
+@keyframes animate_four
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 35px 35px;
+    }
+}
+@keyframes animate_five
+{
+    0%
+    {
+        background-position: 35px 35px;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+@keyframes animate_six
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 35px 35px;
+    }
+}
+
+.Layer.layer1
+{
+    background: #222 radial-gradient(#6dff73 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 11;
+    animation: animate 2s linear infinite;
+}
+.Layer.layer2
+{
+    background: #222 radial-gradient(#db0aff 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -35%) rotate(45deg);
+    z-index: 3;
+    animation: animate_two 2s linear infinite;
+}
+.Layer.layer3
+{
+    background: #222 radial-gradient(#03a9f4 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -69%) rotate(45deg);
+    z-index: 3;
+    animation: animate_three 2s linear infinite;
+}
+.Layer.layer4
+{
+    background: #222 radial-gradient(#ffc107 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 12;
+    animation: animate_four 2s linear infinite;
+}
+.Layer.layer5
+{
+    background: #222 radial-gradient(#e91e63 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -35%) rotate(-45deg);
+    z-index: 10;
+    animation: animate_five 2s linear infinite;
+}
+.Layer.layer6 {
+    background: #222 radial-gradient(#0f0 9px, #000 9px, #000 13px, transparent 13px);
+    background-size: 35px 35px;
+    transform: translate(-50%, -69%) rotate(-45deg);
+    z-index: 10;
+    animation: animate_six 2s linear infinite;
+}
+
+p{
+    color: antiquewhite;
+}
